@@ -29,7 +29,7 @@ builtin_colors = {
 def _get_closest_colour_name(rgb):
     match = None
     mindiff = 1.0e15
-    for color in webcolors.names('css3'):
+    for name in webcolors.names('css3'):
         r, g, b = webcolors.name_to_rgb(name)
 
         diff = (rgb[0] - r) ** 2 + (rgb[1] - g) ** 2 + (rgb[2] - b) ** 2
